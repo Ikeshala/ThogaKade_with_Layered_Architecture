@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="619.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersFormController">
+   <children>
+      <ImageView fx:id="ordersPane" fitHeight="634.0" fitWidth="928.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_55-transformed.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="48.0" layoutY="37.0" opacity="0.82" prefHeight="545.0" prefWidth="832.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="832.0" style="-fx-background-color: #AA530E; -fx-background-radius: 5;">
+               <children>
+                  <JFXButton fx:id="btnBack" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="14.0" layoutY="7.0" onAction="#BackButtonOnAction" prefHeight="39.0" prefWidth="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                     <graphic>
+                        <ImageView blendMode="HARD_LIGHT" fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/img_12.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="359.0" layoutY="12.0" text="Orders" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Showcard Gothic" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="783.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_5.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="584.0" layoutY="73.0" onAction="#RefreshButtonOnAction" prefHeight="35.0" prefWidth="234.0" style="-fx-border-color: #AA530E; -fx-border-radius: 10; -fx-background-color: #AA530E; -fx-background-radius: 10;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#685d5d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXTreeTableView id="#tblItems" fx:id="tblOrders" layoutX="13.0" layoutY="119.0" prefHeight="195.0" prefWidth="805.0" style="-fx-selection-bar: #9abae0; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
+               <columns>
+                  <TreeTableColumn fx:id="colOrderId" prefWidth="90.0" text="Order ID" />
+                  <TreeTableColumn fx:id="colDate" prefWidth="130.0" text="Date" />
+                  <TreeTableColumn fx:id="colCustomerId" prefWidth="90.0" text="Customer ID" />
+                  <TreeTableColumn fx:id="colCustomerName" prefWidth="250.0" text="Customer Name" />
+                  <TreeTableColumn fx:id="colTotal" prefWidth="130.0" text="Total" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="90.0" text="Option" />
+               </columns>
+               <styleClass>
+                  <String fx:value="table-row-cell:selected" />
+                  <String fx:value="table-view" />
+               </styleClass>
+            </JFXTreeTableView>
+            <Pane blendMode="HARD_LIGHT" layoutX="14.0" layoutY="73.0" prefHeight="35.0" prefWidth="552.0" style="-fx-background-color: #AA530E; -fx-background-radius: 10;">
+               <children>
+                  <Label blendMode="HARD_LIGHT" layoutX="44.0" layoutY="8.0" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView blendMode="EXCLUSION" fitHeight="31.0" fitWidth="23.0" layoutX="14.0" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/output-onlinegiftools.gif" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="txtSearchOrder" blendMode="SCREEN" focusColor="WHITE" layoutX="100.0" prefHeight="29.0" prefWidth="434.0" promptText="Enter your text here...">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Search item here" />
+                     </tooltip>
+                  </JFXTextField>
+               </children>
+            </Pane>
+            <JFXTreeTableView id="#tblItems" fx:id="tblOrderDetails" layoutX="13.0" layoutY="329.0" prefHeight="202.0" prefWidth="805.0" style="-fx-selection-bar: #9abae0; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
+               <columns>
+                  <TreeTableColumn fx:id="colOrderIdDetailTable" prefWidth="90.0" text="Order ID" />
+                  <TreeTableColumn fx:id="colItemCode" prefWidth="90.0" text="Item Code" />
+                  <TreeTableColumn fx:id="colDescription" prefWidth="250.0" text="Description" />
+                  <TreeTableColumn fx:id="colQuantity" prefWidth="90.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colUnitPrice" prefWidth="130.0" text="Unit Price" />
+                  <TreeTableColumn fx:id="colAmount" prefWidth="130.0" text="Amount" />
+               </columns>
+               <styleClass>
+                  <String fx:value="table-row-cell:selected" />
+                  <String fx:value="table-view" />
+               </styleClass>
+            </JFXTreeTableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

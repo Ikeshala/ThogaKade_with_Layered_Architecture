@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeOrderPane" prefHeight="619.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+   <children>
+      <ImageView fx:id="itemPane" fitHeight="619.0" fitWidth="934.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_45.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="48.0" layoutY="37.0" opacity="0.82" prefHeight="545.0" prefWidth="832.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="832.0" style="-fx-background-color: #6B240C; -fx-background-radius: 5;">
+               <children>
+                  <JFXButton fx:id="btnBack" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="14.0" layoutY="7.0" onAction="#BackButtonOnAction" prefHeight="39.0" prefWidth="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                     <graphic>
+                        <ImageView blendMode="HARD_LIGHT" fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/img_12.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="319.0" layoutY="13.0" text="Place Order" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Showcard Gothic" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView blendMode="HARD_LIGHT" fitHeight="35.0" fitWidth="35.0" layoutX="783.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_8.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnPlaceOrder" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="616.0" layoutY="489.0" onAction="#PlaceOrderButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="PLACE ORDER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.37222222222222223" centerY="0.3476190476190476" cycleMethod="REFLECT" focusAngle="37.41" focusDistance="0.13953488372093026" radius="0.6627906976744187">
+                     <stops>
+                        <Stop color="#38a13d" />
+                        <Stop color="#0d4d6b" offset="0.007662835249042145" />
+                        <Stop color="#21f01af2" offset="0.9808429118773946" />
+                        <Stop color="#21ed1ae2" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="btnAddToCart" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="24.0" layoutY="489.0" onAction="#AddToCartButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="ADD TO CART" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.37222222222222223" centerY="0.3476190476190476" cycleMethod="REFLECT" focusAngle="37.41" focusDistance="0.13953488372093026" radius="0.6627906976744187">
+                     <stops>
+                        <Stop color="#38a13d" />
+                        <Stop color="#0d4d6b" offset="0.007662835249042145" />
+                        <Stop color="#21f01af2" offset="0.9808429118773946" />
+                        <Stop color="#21ed1ae2" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXTreeTableView id="#tblItems" fx:id="tblOrders" layoutX="246.0" layoutY="81.0" prefHeight="394.0" prefWidth="565.0" style="-fx-selection-bar: #94ff66; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
+               <columns>
+                  <TreeTableColumn fx:id="colItemCode" prefWidth="73.0" text="Item Code" />
+                  <TreeTableColumn fx:id="colItemDescription" prefWidth="212.0" text="Item Description" />
+                  <TreeTableColumn fx:id="colQuantity" prefWidth="81.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colAmount" prefWidth="104.0" text="Amount" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="76.0" text="Option" />
+               </columns>
+               <styleClass>
+                  <String fx:value="table-row-cell:selected" />
+                  <String fx:value="table-view" />
+               </styleClass>
+            </JFXTreeTableView>
+            <Label layoutX="246.0" layoutY="495.0" text="Total : ">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotal" layoutX="296.0" layoutY="495.0" text="0.00">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane blendMode="HARD_LIGHT" layoutX="22.0" layoutY="81.0" prefHeight="394.0" prefWidth="201.0" style="-fx-background-color: #6B240C; -fx-background-radius: 10;">
+               <children>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="43.0" text="Customer ID" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbCustomerID" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="63.0" prefHeight="29.0" prefWidth="164.0">
+                     <tooltip>
+                        <Tooltip text="Enter customer ID here" />
+                     </tooltip>
+                  </JFXComboBox>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="107.0" text="Customer Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCustomerName" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="124.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Enter customer name here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="166.0" text="Item Code" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbItemCode" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="181.0" prefHeight="29.0" prefWidth="164.0">
+                     <tooltip>
+                        <Tooltip text="Enter item code here" />
+                     </tooltip>
+                  </JFXComboBox>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="223.0" text="Item Description" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtItemDescription" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="238.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Enter item description here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="280.0" text="Unit Price" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtUnitPrice" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="295.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Enter unit price here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="338.0" text="Buying Quantity" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtBuyingQuantity" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="353.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Enter buying quantity here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="9.0" text="Order ID : " textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderId" blendMode="SCREEN" layoutX="91.0" layoutY="9.0" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

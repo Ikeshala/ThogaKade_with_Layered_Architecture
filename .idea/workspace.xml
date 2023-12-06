@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Initializing of existing project with MVC Architecture." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YUMtXNamuaRCHeyUnYvOQyDURf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.ThogaKade [javafx:run]">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="ThogaKade" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThogaKade [javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppInitializer" />
+      <item itemvalue="Maven.ThogaKade [javafx:run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="" />
+      <created>1700573940298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700573940298</updated>
+      <workItem from="1700573941472" duration="1943000" />
+      <workItem from="1700575921169" duration="209000" />
+      <workItem from="1700576140628" duration="8572000" />
+      <workItem from="1700594308173" duration="3069000" />
+      <workItem from="1700629531972" duration="28147000" />
+      <workItem from="1700669529847" duration="11898000" />
+      <workItem from="1700714414449" duration="16781000" />
+      <workItem from="1700744973880" duration="17327000" />
+      <workItem from="1700804788017" duration="5422000" />
+      <workItem from="1700821946861" duration="5593000" />
+      <workItem from="1700827842958" duration="1461000" />
+      <workItem from="1700901762020" duration="621000" />
+      <workItem from="1701158558580" duration="9725000" />
+      <workItem from="1701230145920" duration="19063000" />
+      <workItem from="1701263831177" duration="2642000" />
+      <workItem from="1701267209075" duration="9079000" />
+      <workItem from="1701317760150" duration="21134000" />
+      <workItem from="1701360309273" duration="5726000" />
+      <workItem from="1701666756524" duration="615000" />
+      <workItem from="1701854964022" duration="944000" />
+      <workItem from="1701860831758" duration="859000" />
+    </task>
+    <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
+      <option name="closed" value="true" />
+      <created>1700665357258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700665357258</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700670743363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700670743363</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700670932682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700670932682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700671017464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700671017464</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DBConnection with singleton design pattern">
+      <option name="closed" value="true" />
+      <created>1700674162637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700674162637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implement functionality to populate tables with items and enable the capability to save items to both tables">
+      <option name="closed" value="true" />
+      <created>1700728978713</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700728978713</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implement the model layer to retrieve and return lists of both customers and items">
+      <option name="closed" value="true" />
+      <created>1700748903394</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700748903394</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented the save method for both customers and items in their respective model classes.  Additionally, 'clearFields' method was created to reset input fields.">
+      <option name="closed" value="true" />
+      <created>1700761540975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700761540975</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created.">
+      <option name="closed" value="true" />
+      <created>1700768971616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700768971616</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented the delete method for both customers and items in their respective model classes.">
+      <option name="closed" value="true" />
+      <created>1700769909034</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700769909034</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source.">
+      <option name="closed" value="true" />
+      <created>1700770611670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770611670</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components.">
+      <option name="closed" value="true" />
+      <created>1700827037797</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700827037797</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Incorporated a new directory to archive UI images for future reference and utilization.">
+      <option name="closed" value="true" />
+      <created>1700828050900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700828050900</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implemented a case-insensitive search function for both customers and items.">
+      <option name="closed" value="true" />
+      <created>1701164259451</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701164259451</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented loading of item codes and customer IDs into combo boxes. Automatically fetches customer names corresponding to customer IDs and item descriptions along with unit prices relevant to item codes.">
+      <option name="closed" value="true" />
+      <created>1701172638589</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701172638589</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs.">
+      <option name="closed" value="true" />
+      <created>1701256243067</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701256243067</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart.">
+      <option name="closed" value="true" />
+      <created>1701269605650</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701269605650</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implemented the generation of order IDs.">
+      <option name="closed" value="true" />
+      <created>1701274421721</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701274421721</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method.">
+      <option name="closed" value="true" />
+      <created>1701326246146</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701326246146</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Implemented the Orders UI and made a few modifications to other UIs.">
+      <option name="closed" value="true" />
+      <created>1701353359036</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701353359036</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use.">
+      <option name="closed" value="true" />
+      <created>1701363349031</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701363349031</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed UIs for Dashboard, Customers and Items." />
+    <MESSAGE value="Change MVC" />
+    <MESSAGE value="DBConnection with singleton design pattern" />
+    <MESSAGE value="Implement functionality to populate tables with items and enable the capability to save items to both tables" />
+    <MESSAGE value="Implement the model layer to retrieve and return lists of both customers and items" />
+    <MESSAGE value="Implemented the save method for both customers and items in their respective model classes.  Additionally, 'clearFields' method was created to reset input fields." />
+    <MESSAGE value="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created." />
+    <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
+    <MESSAGE value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
+    <MESSAGE value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
+    <MESSAGE value="Incorporated a new directory to archive UI images for future reference and utilization." />
+    <MESSAGE value="Implemented a case-insensitive search function for both customers and items." />
+    <MESSAGE value="Implemented loading of item codes and customer IDs into combo boxes. Automatically fetches customer names corresponding to customer IDs and item descriptions along with unit prices relevant to item codes." />
+    <MESSAGE value="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs." />
+    <MESSAGE value="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart." />
+    <MESSAGE value="Implemented the generation of order IDs." />
+    <MESSAGE value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
+    <MESSAGE value="Implemented the Orders UI and made a few modifications to other UIs." />
+    <MESSAGE value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
+  </component>
+</project>

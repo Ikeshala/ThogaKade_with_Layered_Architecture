@@ -1,0 +1,31 @@
+.table-view {
+    -fx-font-weight: bold;
+    -fx-border-width: 1;
+    -fx-border-color: black;
+}
+
+.column-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-min-height: 25;
+}
+
+.table-cell {
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#tblCustomers.table-row-cell:selected{
+    -fx-selection-bar: #ff9393;
+    -fx-font-weight: bold;
+}
+
+#tblItems.table-row-cell:selected{
+    -fx-selection-bar:   #ffec66;
+    -fx-font-weight: bold;
+}
+
+#tblOrders.table-row-cell:selected{
+    -fx-selection-bar:  #94ff66;
+    -fx-font-weight: bold;
+}
