@@ -29,6 +29,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ikeshala"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a15587cb-8d0c-496d-805b-011bd68d7319" />
+        <option name="url" value="https://github.com/Ikeshala/ThogaKade_wit_Layered_Architecture.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -47,6 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
     "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
@@ -158,6 +173,7 @@
       <workItem from="1701666756524" duration="615000" />
       <workItem from="1701854964022" duration="944000" />
       <workItem from="1701860831758" duration="859000" />
+      <workItem from="1701861706576" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
