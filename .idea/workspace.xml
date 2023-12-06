@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Initializing of existing project with MVC Architecture." />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Initializing of existing project with Layered Architecture.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +31,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ikeshala"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ikeshala&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -55,34 +57,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dto" />
@@ -174,6 +176,7 @@
       <workItem from="1701854964022" duration="944000" />
       <workItem from="1701860831758" duration="859000" />
       <workItem from="1701861706576" duration="1617000" />
+      <workItem from="1701863463333" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -343,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701363349031</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Initializing of existing project with Layered Architecture.">
+      <option name="closed" value="true" />
+      <created>1701863521781</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701863521781</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +391,7 @@
     <MESSAGE value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
     <MESSAGE value="Implemented the Orders UI and made a few modifications to other UIs." />
     <MESSAGE value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
+    <MESSAGE value="Initializing of existing project with Layered Architecture." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initializing of existing project with Layered Architecture." />
   </component>
 </project>
