@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Initializing of existing project with Layered Architecture.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="To transition from MVC to layered architecture, create new directories 'bo' and 'dao'. Move files from the model into the DAO layer.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Orders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CustomerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ItemModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderDetailsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrderDetailsModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/CustomerModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/CustomerModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/ItemModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderDetailsModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/OrderDetailsModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/OrderModelImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +181,7 @@
       <workItem from="1701860831758" duration="859000" />
       <workItem from="1701861706576" duration="1617000" />
       <workItem from="1701863463333" duration="2094000" />
-      <workItem from="1701944762290" duration="1578000" />
+      <workItem from="1701944762290" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -374,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701863923225</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="To transition from MVC to layered architecture, create new directories 'bo' and 'dao'. Move files from the model into the DAO layer.">
+      <option name="closed" value="true" />
+      <created>1701949660708</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701949660708</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,6 +413,7 @@
     <MESSAGE value="Implemented the Orders UI and made a few modifications to other UIs." />
     <MESSAGE value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
     <MESSAGE value="Initializing of existing project with Layered Architecture." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initializing of existing project with Layered Architecture." />
+    <MESSAGE value="To transition from MVC to layered architecture, create new directories 'bo' and 'dao'. Move files from the model into the DAO layer." />
+    <option name="LAST_COMMIT_MESSAGE" value="To transition from MVC to layered architecture, create new directories 'bo' and 'dao'. Move files from the model into the DAO layer." />
   </component>
 </project>
