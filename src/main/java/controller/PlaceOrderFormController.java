@@ -25,12 +25,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import model.CustomerModel;
-import model.ItemModel;
-import model.OrderModel;
-import model.impl.CustomerModelImpl;
-import model.impl.ItemModelImpl;
-import model.impl.OrderModelImpl;
+import dao.CustomerModel;
+import dao.ItemModel;
+import dao.OrderModel;
+import dao.impl.CustomerModelImpl;
+import dao.impl.ItemModelImpl;
+import dao.impl.OrderModelImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;

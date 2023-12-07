@@ -7,7 +7,6 @@ import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dto.CustomersDto;
 import dto.tm.CustomerTm;
-import dto.tm.ItemsTm;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -27,8 +26,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import model.CustomerModel;
-import model.impl.CustomerModelImpl;
+import dao.CustomerModel;
+import dao.impl.CustomerModelImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;

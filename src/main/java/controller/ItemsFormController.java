@@ -26,8 +26,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import model.ItemModel;
-import model.impl.ItemModelImpl;
+import dao.ItemModel;
+import dao.impl.ItemModelImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;

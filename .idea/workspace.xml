@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Initializing of existing project with Layered Architecture.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CustomerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderDetailsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrderDetailsModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/OrderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/CustomerModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/CustomerModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/ItemModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderDetailsModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/OrderDetailsModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/OrderModelImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +187,8 @@
       <workItem from="1701854964022" duration="944000" />
       <workItem from="1701860831758" duration="859000" />
       <workItem from="1701861706576" duration="1617000" />
-      <workItem from="1701863463333" duration="336000" />
+      <workItem from="1701863463333" duration="2094000" />
+      <workItem from="1701944762290" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -354,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701863521781</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Initializing of existing project with Layered Architecture.">
+      <option name="closed" value="true" />
+      <created>1701863923225</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701863923225</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
