@@ -10,6 +10,6 @@ import lombok.*;
 public class Item {
     private String code;
     private String description;
-    private int unitPrice;
-    private double qtyOnHand;
+    private double unitPrice;
+    private int qtyOnHand;
 }

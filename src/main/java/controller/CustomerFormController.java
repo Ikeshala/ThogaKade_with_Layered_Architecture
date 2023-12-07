@@ -1,5 +1,7 @@
 package controller;
 
+import bo.custom.CustomerBo;
+import bo.custom.impl.CustomerBoImpl;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
@@ -26,8 +28,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.CustomerModel;
-import dao.impl.CustomerModelImpl;
+import dao.custom.CustomerDao;
+import dao.custom.impl.CustomerDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -84,7 +86,7 @@ public class CustomerFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private CustomerModel customerModel = new CustomerModelImpl();
+    private CustomerBo<CustomersDto> customerBo = new CustomerBoImpl();
 
     public void initialize(){
         colCustomerID.setCellValueFactory(new TreeItemPropertyValueFactory<>("id"));
@@ -114,7 +116,7 @@ public class CustomerFormController {
         ObservableList<CustomerTm> tmList = FXCollections.observableArrayList();
 
         try {
-            List<CustomersDto> dtoList = customerModel.allCustomers();
+            List<CustomersDto> dtoList = customerBo.allCustomers();
 
             for (CustomersDto dto : dtoList) {
                 JFXButton button = new JFXButton("DELETE");
@@ -166,7 +168,7 @@ public class CustomerFormController {
 
     private void deleteCustomer(String id) {
         try {
-            boolean isDeleted = customerModel.deleteCustomer(id);
+            boolean isDeleted = customerBo.deleteCustomer(id);
             if (isDeleted){
                 new Alert(Alert.AlertType.INFORMATION,"Customer Deleted!").show();
                 loadCustomersTable();
@@ -213,7 +215,7 @@ public class CustomerFormController {
                     Double.parseDouble(txtCustomerSalary.getText())
             );
 
-            boolean isSaved = customerModel.saveCustomer(customersDto);
+            boolean isSaved = customerBo.saveCustomer(customersDto);
 
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, "Customer Saved!").show();
@@ -251,7 +253,7 @@ public class CustomerFormController {
                     Double.parseDouble(txtCustomerSalary.getText())
             );
 
-            boolean isUpdated = customerModel.updateCustomer(updatedCustomer);
+            boolean isUpdated = customerBo.updateCustomer(updatedCustomer);
 
             if (isUpdated) {
                 new Alert(Alert.AlertType.INFORMATION, "Customer Updated!").show();

@@ -1,17 +1,19 @@
-package dao.impl;
+package dao.custom.impl;
 
 import db.DBConnection;
 import dto.OrderDto;
-import dao.OrderDetailsModel;
-import dao.OrderModel;
+import dao.custom.OrderDetailDao;
+import dao.custom.OrdersDao;
+import entity.Orders;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
-public class OrderModelImpl implements OrderModel {
-    OrderDetailsModel orderDetailsModel = new OrderDetailsModelImpl();
+public class OrdersDaoImpl implements OrdersDao {
+    OrderDetailDao orderDetailDao = new OrderDetailDaoImpl();
     @Override
     public boolean saveOrder(OrderDto dto) throws SQLException {
         Connection connection = null;
@@ -27,7 +29,7 @@ public class OrderModelImpl implements OrderModel {
             pstm.setString(3,dto.getCustomerId());
 
             if (pstm.executeUpdate()>0){
-                boolean isOrderDetailsSaved = orderDetailsModel.saveOrderDetails(dto.getList());
+                boolean isOrderDetailsSaved = orderDetailDao.saveOrderDetails(dto.getList());
                 if (isOrderDetailsSaved){
                     connection.commit();
                     return true;
@@ -56,6 +58,26 @@ public class OrderModelImpl implements OrderModel {
                     null
             );
         }
+        return null;
+    }
+
+    @Override
+    public boolean save(Orders entity) throws SQLException, ClassNotFoundException {
+        return false;
+    }
+
+    @Override
+    public boolean update(Orders entity) throws SQLException, ClassNotFoundException {
+        return false;
+    }
+
+    @Override
+    public boolean delete(String value) throws SQLException, ClassNotFoundException {
+        return false;
+    }
+
+    @Override
+    public List<Orders> getAll() throws SQLException, ClassNotFoundException {
         return null;
     }
 }

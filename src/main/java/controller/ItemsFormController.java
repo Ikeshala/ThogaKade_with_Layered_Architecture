@@ -1,5 +1,7 @@
 package controller;
 
+import bo.custom.ItemBo;
+import bo.custom.impl.ItemBoImpl;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
@@ -26,8 +28,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.ItemModel;
-import dao.impl.ItemModelImpl;
+import dao.custom.ItemDao;
+import dao.custom.impl.ItemDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -84,7 +86,7 @@ public class ItemsFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private ItemModel itemModel = new ItemModelImpl();
+    private ItemBo<ItemsDto> itemBo = new ItemBoImpl();
 
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
@@ -116,7 +118,7 @@ public class ItemsFormController {
         ObservableList<ItemsTm> tmList = FXCollections.observableArrayList();
 
         try {
-            List<ItemsDto> dtoList = itemModel.allItems();
+            List<ItemsDto> dtoList = itemBo.allItems();
 
             for (ItemsDto dto : dtoList) {
                 JFXButton button = new JFXButton("DELETE");
@@ -168,7 +170,7 @@ public class ItemsFormController {
 
     private void deleteItem(String code) {
         try {
-            boolean isDeleted = itemModel.deleteItem(code);
+            boolean isDeleted = itemBo.deleteItem(code);
             if (isDeleted){
                 new Alert(Alert.AlertType.INFORMATION,"Item Deleted!").show();
                 loadItemsTable();
@@ -215,7 +217,7 @@ public class ItemsFormController {
                     Integer.parseInt(txtQuantityOnHand.getText())
             );
 
-            boolean isSaved = itemModel.saveItem(itemsDto);
+            boolean isSaved = itemBo.saveItem(itemsDto);
 
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, "Item Saved!").show();
@@ -253,7 +255,7 @@ public class ItemsFormController {
                     Integer.parseInt(txtQuantityOnHand.getText())
             );
 
-            boolean isUpdated = itemModel.updateItem(updatedItem);
+            boolean isUpdated = itemBo.updateItem(updatedItem);
 
             if (isUpdated) {
                 new Alert(Alert.AlertType.INFORMATION, "Item Updated!").show();

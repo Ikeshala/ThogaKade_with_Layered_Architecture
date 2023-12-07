@@ -25,12 +25,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.CustomerModel;
-import dao.ItemModel;
-import dao.OrderModel;
-import dao.impl.CustomerModelImpl;
-import dao.impl.ItemModelImpl;
-import dao.impl.OrderModelImpl;
+import dao.custom.CustomerDao;
+import dao.custom.ItemDao;
+import dao.custom.OrdersDao;
+import dao.custom.impl.CustomerDaoImpl;
+import dao.custom.impl.ItemDaoImpl;
+import dao.custom.impl.OrdersDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -88,9 +88,9 @@ public class PlaceOrderFormController {
     private double total = 0;
     private List<CustomersDto> customers;
     private List<ItemsDto> items;
-    private CustomerModel customerModel = new CustomerModelImpl();
-    private ItemModel itemModel = new ItemModelImpl();
-    private OrderModel orderModel = new OrderModelImpl();
+    private CustomerDao customerDao = new CustomerDaoImpl();
+    private ItemDao itemDao = new ItemDaoImpl();
+    private OrdersDao ordersDao = new OrdersDaoImpl();
     private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
@@ -129,7 +129,7 @@ public class PlaceOrderFormController {
 
     private void loadItemCodes() {
         try {
-            items = itemModel.allItems();
+            items = itemDao.allItems();
             ObservableList list = FXCollections.observableArrayList();
             for (ItemsDto dto: items) {
                 list.add(dto.getCode());
@@ -142,7 +142,7 @@ public class PlaceOrderFormController {
 
     private void loadCustomerIds() {
         try {
-            customers = customerModel.allCustomers();
+            customers = customerDao.allCustomers();
             ObservableList list = FXCollections.observableArrayList();
             for (CustomersDto dto: customers) {
                 list.add(dto.getId());
@@ -158,7 +158,7 @@ public class PlaceOrderFormController {
         try {
             String selectedItemCode = cmbItemCode.getValue().toString();
             int buyingQuantity = Integer.parseInt(txtBuyingQuantity.getText());
-            int availableQuantity = itemModel.getItem(selectedItemCode).getQuantity();
+            int availableQuantity = itemDao.getItem(selectedItemCode).getQuantity();
 
             if (buyingQuantity > availableQuantity) {
                 new Alert(Alert.AlertType.INFORMATION, "Max quantity available " + availableQuantity + "!").show();
@@ -177,7 +177,7 @@ public class PlaceOrderFormController {
                 }
             }
 
-            double amount = itemModel.getItem(selectedItemCode).getUnitPrice() * buyingQuantity;
+            double amount = itemDao.getItem(selectedItemCode).getUnitPrice() * buyingQuantity;
 
             JFXButton button = new JFXButton("DELETE");
             button.setFont(Font.font("System", FontWeight.BOLD, 13));
@@ -241,7 +241,7 @@ public class PlaceOrderFormController {
 
     public void generateId(){
         try {
-            OrderDto dto = orderModel.lastOrder();
+            OrderDto dto = ordersDao.lastOrder();
             if (dto != null){
                 String id = dto.getOrderId();
                 int number = Integer.parseInt(id.split("[D]")[1]);
@@ -269,7 +269,7 @@ public class PlaceOrderFormController {
         }
         boolean isSaved = false;
         try {
-            isSaved = orderModel.saveOrder(new OrderDto(
+            isSaved = ordersDao.saveOrder(new OrderDto(
                     lblOrderId.getText(),
                     LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
                     cmbCustomerID.getValue().toString(),
