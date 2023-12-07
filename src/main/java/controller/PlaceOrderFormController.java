@@ -1,5 +1,9 @@
 package controller;
 
+import bo.custom.CustomerBo;
+import bo.custom.ItemBo;
+import bo.custom.impl.CustomerBoImpl;
+import bo.custom.impl.ItemBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dto.CustomersDto;
@@ -88,8 +92,8 @@ public class PlaceOrderFormController {
     private double total = 0;
     private List<CustomersDto> customers;
     private List<ItemsDto> items;
-    private CustomerDao customerDao = new CustomerDaoImpl();
-    private ItemDao itemDao = new ItemDaoImpl();
+    private CustomerBo<CustomersDto> customerBo = new CustomerBoImpl();
+    private ItemBo<ItemsDto> itemBo = new ItemBoImpl();
     private OrdersDao ordersDao = new OrdersDaoImpl();
     private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
     public void initialize(){
@@ -129,7 +133,7 @@ public class PlaceOrderFormController {
 
     private void loadItemCodes() {
         try {
-            items = itemDao.allItems();
+            items = itemBo.allItems();
             ObservableList list = FXCollections.observableArrayList();
             for (ItemsDto dto: items) {
                 list.add(dto.getCode());
@@ -142,7 +146,7 @@ public class PlaceOrderFormController {
 
     private void loadCustomerIds() {
         try {
-            customers = customerDao.allCustomers();
+            customers = customerBo.allCustomers();
             ObservableList list = FXCollections.observableArrayList();
             for (CustomersDto dto: customers) {
                 list.add(dto.getId());
@@ -155,77 +159,50 @@ public class PlaceOrderFormController {
 
     @FXML
     void AddToCartButtonOnAction(ActionEvent event) {
-        try {
-            String selectedItemCode = cmbItemCode.getValue().toString();
-            int buyingQuantity = Integer.parseInt(txtBuyingQuantity.getText());
-            int availableQuantity = itemDao.getItem(selectedItemCode).getQuantity();
+        JFXButton button = new JFXButton("DELETE");
+        button.setFont(Font.font("System", FontWeight.BOLD, 13));
+        button.setButtonType(JFXButton.ButtonType.RAISED);
+        button.setBlendMode(BlendMode.HARD_LIGHT);
+        button.setTextAlignment(TextAlignment.CENTER);
+        button.setTextFill(Color.WHITE);
+        button.setStyle("-fx-border-color:   #6B240C; -fx-border-radius: 5; -fx-background-color:  #6B240C;");
 
-            if (buyingQuantity > availableQuantity) {
-                new Alert(Alert.AlertType.INFORMATION, "Max quantity available " + availableQuantity + "!").show();
-                return;
-            }
+        OrderTm orderTm = new OrderTm(
+                cmbItemCode.getValue().toString(),
+                txtItemDescription.getText(),
+                Integer.parseInt(txtBuyingQuantity.getText()),
+                Double.parseDouble(txtUnitPrice.getText())*Integer.parseInt(txtBuyingQuantity.getText()),
+                button
+        );
 
-            for (OrderTm order : tmList) {
-                if (order.getCode().equals(selectedItemCode)) {
-                    int totalQuantity = order.getQuantity() + buyingQuantity;
+        button.setOnAction(actionEvent -> {
+            tmList.remove(orderTm);
+            tblOrders.refresh();
+            total -= orderTm.getAmount();
+            lblTotal.setText(String.format("%.2f",total));
+        });
 
-                    if (totalQuantity > availableQuantity) {
-                        int remainingQuantity = availableQuantity - (totalQuantity - buyingQuantity);
-                        new Alert(Alert.AlertType.WARNING, "Remaining Quantity " + remainingQuantity + "!").show();
-                        return;
-                    }
-                }
-            }
+        boolean isExist = false;
 
-            double amount = itemDao.getItem(selectedItemCode).getUnitPrice() * buyingQuantity;
-
-            JFXButton button = new JFXButton("DELETE");
-            button.setFont(Font.font("System", FontWeight.BOLD, 13));
-            button.setButtonType(JFXButton.ButtonType.RAISED);
-            button.setBlendMode(BlendMode.HARD_LIGHT);
-            button.setTextAlignment(TextAlignment.CENTER);
-            button.setTextFill(Color.WHITE);
-            button.setStyle("-fx-border-color:   #6B240C; -fx-border-radius: 5; -fx-background-color:  #6B240C;");
-
-            OrderTm orderTm = new OrderTm(
-                    cmbItemCode.getValue().toString(),
-                    txtItemDescription.getText(),
-                    Integer.parseInt(txtBuyingQuantity.getText()),
-                    amount,
-                    button
-            );
-
-            button.setOnAction(actionEvent -> {
-                tmList.remove(orderTm);
-                tblOrders.refresh();
-                total -= orderTm.getAmount();
-                lblTotal.setText(String.format("%.2f",total));
-            });
-
-            boolean isExist = false;
-
-            for (OrderTm order:tmList) {
-                if (order.getCode().equals(orderTm.getCode())){
-                    order.setQuantity(order.getQuantity() + orderTm.getQuantity());
-                    order.setAmount(order.getAmount() + orderTm.getAmount());
-                    isExist = true;
-                    total += orderTm.getAmount();
-                }
-            }
-
-            if (!isExist){
-                tmList.add(orderTm);
+        for (OrderTm order:tmList) {
+            if (order.getCode().equals(orderTm.getCode())){
+                order.setQuantity(order.getQuantity() + orderTm.getQuantity());
+                order.setAmount(order.getAmount() + orderTm.getAmount());
+                isExist = true;
                 total += orderTm.getAmount();
             }
-
-            TreeItem<OrderTm> treeObject = new RecursiveTreeItem<OrderTm>(tmList, RecursiveTreeObject::getChildren);
-            tblOrders.setRoot(treeObject);
-            tblOrders.setShowRoot(false);
-
-            lblTotal.setText(String.format("%.2f",total));
-        } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
         }
+
+        if (!isExist){
+            tmList.add(orderTm);
+            total += orderTm.getAmount();
+        }
+        lblTotal.setText(String.format("%.2f",total));
+
+
+        TreeItem<OrderTm> treeObject = new RecursiveTreeItem<OrderTm>(tmList, RecursiveTreeObject::getChildren);
+        tblOrders.setRoot(treeObject);
+        tblOrders.setShowRoot(false);
     }
 
     @FXML
