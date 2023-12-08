@@ -1,8 +1,9 @@
 package bo.custom.impl;
 
 import bo.custom.ItemBo;
+import dao.DaoFactory;
 import dao.custom.ItemDao;
-import dao.custom.impl.ItemDaoImpl;
+import dao.util.DaoType;
 import dto.ItemsDto;
 import entity.Item;
 
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemBoImpl implements ItemBo {
-    private ItemDao itemDao = new ItemDaoImpl();
+    private ItemDao itemDao = DaoFactory.getInstance().getDao(DaoType.ITEM);
     @Override
     public boolean saveItem(ItemsDto dto) throws SQLException, ClassNotFoundException {
         return itemDao.save(new Item(

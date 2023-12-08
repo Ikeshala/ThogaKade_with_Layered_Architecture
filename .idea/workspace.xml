@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Updated the Business Object (BO).">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bo/BoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/util/BoType.java" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the Factory Design Pattern in the Business Object layer(bo).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/util/DaoType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/CustomerBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/CustomerBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/ItemBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/ItemBoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +28,8 @@
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -183,7 +183,7 @@
       <workItem from="1701861706576" duration="1617000" />
       <workItem from="1701863463333" duration="2094000" />
       <workItem from="1701944762290" duration="20399000" />
-      <workItem from="1702010259349" duration="4462000" />
+      <workItem from="1702010259349" duration="6532000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -409,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702011990714</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Implemented the Factory Design Pattern in the Business Object layer(bo).">
+      <option name="closed" value="true" />
+      <created>1702015190342</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702015190342</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Completed UIs for Dashboard, Customers and Items." />
     <MESSAGE value="Change MVC" />
     <MESSAGE value="DBConnection with singleton design pattern" />
     <MESSAGE value="Implement functionality to populate tables with items and enable the capability to save items to both tables" />
@@ -452,6 +459,7 @@
     <MESSAGE value="Converted the customer and item sections from MVC architecture to layered architecture." />
     <MESSAGE value="Implemented crudUtil." />
     <MESSAGE value="Updated the Business Object (BO)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Business Object (BO)." />
+    <MESSAGE value="Implemented the Factory Design Pattern in the Business Object layer(bo)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Factory Design Pattern in the Business Object layer(bo)." />
   </component>
 </project>
