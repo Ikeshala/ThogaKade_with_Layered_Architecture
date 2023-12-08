@@ -1,5 +1,6 @@
 package controller;
 
+import bo.BoFactory;
 import bo.custom.CustomerBo;
 import bo.custom.impl.CustomerBoImpl;
 import com.jfoenix.controls.JFXButton;
@@ -7,6 +8,7 @@ import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import dao.util.BoType;
 import dto.CustomersDto;
 import dto.tm.CustomerTm;
 import javafx.beans.value.ChangeListener;
@@ -75,7 +77,7 @@ public class CustomerFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private CustomerBo customerBo = new CustomerBoImpl();
+    private CustomerBo customerBo = BoFactory.getInstance().getBo(BoType.CUSTOMER);
 
     public void initialize(){
         colCustomerID.setCellValueFactory(new TreeItemPropertyValueFactory<>("id"));

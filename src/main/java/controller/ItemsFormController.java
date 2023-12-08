@@ -1,5 +1,6 @@
 package controller;
 
+import bo.BoFactory;
 import bo.custom.ItemBo;
 import bo.custom.impl.ItemBoImpl;
 import com.jfoenix.controls.JFXButton;
@@ -7,6 +8,7 @@ import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import dao.util.BoType;
 import dto.ItemsDto;
 import dto.tm.ItemsTm;
 import javafx.beans.value.ChangeListener;
@@ -75,7 +77,7 @@ public class ItemsFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private ItemBo itemBo = new ItemBoImpl();
+    private ItemBo itemBo = BoFactory.getInstance().getBo(BoType.ITEM);
 
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
