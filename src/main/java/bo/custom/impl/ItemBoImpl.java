@@ -4,14 +4,13 @@ import bo.custom.ItemBo;
 import dao.custom.ItemDao;
 import dao.custom.impl.ItemDaoImpl;
 import dto.ItemsDto;
-import entity.Customer;
 import entity.Item;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemBoImpl implements ItemBo<ItemsDto> {
+public class ItemBoImpl implements ItemBo {
     private ItemDao itemDao = new ItemDaoImpl();
     @Override
     public boolean saveItem(ItemsDto dto) throws SQLException, ClassNotFoundException {

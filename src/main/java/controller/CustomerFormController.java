@@ -28,8 +28,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.custom.CustomerDao;
-import dao.custom.impl.CustomerDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -41,9 +39,6 @@ public class CustomerFormController {
 
     @FXML
     private ImageView customerPane;
-
-    @FXML
-    private JFXButton btnBack;
 
     @FXML
     private JFXTextField txtCustomerID;
@@ -58,16 +53,10 @@ public class CustomerFormController {
     private JFXTextField txtCustomerSalary;
 
     @FXML
-    private JFXButton btnRefresh;
-
-    @FXML
     private JFXTextField txtSearchCustomer;
 
     @FXML
     private JFXButton btnUpdate;
-
-    @FXML
-    private JFXButton btnSave;
 
     @FXML
     private JFXTreeTableView<CustomerTm> tblCustomers;
@@ -86,7 +75,7 @@ public class CustomerFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private CustomerBo<CustomersDto> customerBo = new CustomerBoImpl();
+    private CustomerBo customerBo = new CustomerBoImpl();
 
     public void initialize(){
         colCustomerID.setCellValueFactory(new TreeItemPropertyValueFactory<>("id"));

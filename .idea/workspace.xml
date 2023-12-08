@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Converted the customer and item sections from MVC architecture to layered architecture.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/util/CrudUtil.java" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented crudUtil.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/CustomerBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/CustomerBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/ItemBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/ItemBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/OrderDetailBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/OrderDetailBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/CustomerBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/CustomerBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/ItemBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/ItemBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrderDetailBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrderDetailBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/impl/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/impl/ItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/impl/ItemDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/OrderDetailDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/OrderDetailDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/util/CrudUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/util/CrudUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +194,8 @@
       <workItem from="1701860831758" duration="859000" />
       <workItem from="1701861706576" duration="1617000" />
       <workItem from="1701863463333" duration="2094000" />
-      <workItem from="1701944762290" duration="18756000" />
+      <workItem from="1701944762290" duration="20399000" />
+      <workItem from="1702010259349" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -391,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701964706513</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Implemented crudUtil.">
+      <option name="closed" value="true" />
+      <created>1701973386701</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701973386701</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,6 +454,7 @@
     <MESSAGE value="To transition from MVC to layered architecture, create new directories 'bo' and 'dao'. Move files from the model into the DAO layer." />
     <MESSAGE value="Initialized entity." />
     <MESSAGE value="Converted the customer and item sections from MVC architecture to layered architecture." />
-    <option name="LAST_COMMIT_MESSAGE" value="Converted the customer and item sections from MVC architecture to layered architecture." />
+    <MESSAGE value="Implemented crudUtil." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented crudUtil." />
   </component>
 </project>

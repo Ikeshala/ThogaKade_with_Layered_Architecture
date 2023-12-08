@@ -28,8 +28,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.custom.ItemDao;
-import dao.custom.impl.ItemDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -41,9 +39,6 @@ public class ItemsFormController {
 
     @FXML
     private ImageView itemPane;
-
-    @FXML
-    private JFXButton btnBack;
 
     @FXML
     private JFXTextField txtItemCode;
@@ -58,16 +53,10 @@ public class ItemsFormController {
     private JFXTextField txtQuantityOnHand;
 
     @FXML
-    private JFXButton btnRefresh;
-
-    @FXML
     private JFXTextField txtSearchItem;
 
     @FXML
     private JFXButton btnUpdate;
-
-    @FXML
-    private JFXButton btnSave;
 
     @FXML
     private JFXTreeTableView<ItemsTm> tblItems;
@@ -86,7 +75,7 @@ public class ItemsFormController {
 
     @FXML
     private TreeTableColumn colOption;
-    private ItemBo<ItemsDto> itemBo = new ItemBoImpl();
+    private ItemBo itemBo = new ItemBoImpl();
 
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));

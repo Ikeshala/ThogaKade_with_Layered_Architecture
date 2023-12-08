@@ -1,6 +1,5 @@
 package controller;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
@@ -17,12 +16,6 @@ public class OrdersFormController {
 
     @FXML
     private ImageView ordersPane;
-
-    @FXML
-    private JFXButton btnBack;
-
-    @FXML
-    private JFXButton btnRefresh;
 
     @FXML
     private JFXTreeTableView<?> tblOrders;

@@ -6,6 +6,8 @@ import bo.custom.impl.CustomerBoImpl;
 import bo.custom.impl.ItemBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
+import dao.custom.OrdersDao;
+import dao.custom.impl.OrdersDaoImpl;
 import dto.CustomersDto;
 import dto.ItemsDto;
 import dto.OrderDetailsDto;
@@ -29,12 +31,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dao.custom.CustomerDao;
-import dao.custom.ItemDao;
-import dao.custom.OrdersDao;
-import dao.custom.impl.CustomerDaoImpl;
-import dao.custom.impl.ItemDaoImpl;
-import dao.custom.impl.OrdersDaoImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -92,8 +88,8 @@ public class PlaceOrderFormController {
     private double total = 0;
     private List<CustomersDto> customers;
     private List<ItemsDto> items;
-    private CustomerBo<CustomersDto> customerBo = new CustomerBoImpl();
-    private ItemBo<ItemsDto> itemBo = new ItemBoImpl();
+    private CustomerBo customerBo = new CustomerBoImpl();
+    private ItemBo itemBo = new ItemBoImpl();
     private OrdersDao ordersDao = new OrdersDaoImpl();
     private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
     public void initialize(){

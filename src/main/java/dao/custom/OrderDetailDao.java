@@ -2,7 +2,6 @@ package dao.custom;
 
 import dao.CrudDao;
 import dto.OrderDetailsDto;
-import entity.Customer;
 import entity.OrderDetail;
 
 import java.sql.SQLException;
