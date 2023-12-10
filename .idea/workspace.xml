@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the Factory Design Pattern in the Data Access Object (Dao) layer.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Converted the 'Place Order' section from MVC architecture to layered architecture.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/reports/customerReport.jrxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/impl/OrdersDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
-    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade (with Layered Architecture)/src/main/resources/reports",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +95,7 @@
       <recent name="dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade (with Layered Architecture)\src\main\resources\reports" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
     </key>
@@ -185,7 +185,7 @@
       <workItem from="1701863463333" duration="2094000" />
       <workItem from="1701944762290" duration="20399000" />
       <workItem from="1702010259349" duration="7154000" />
-      <workItem from="1702214722655" duration="7384000" />
+      <workItem from="1702214722655" duration="11919000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -427,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702018016453</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Converted the 'Place Order' section from MVC architecture to layered architecture.">
+      <option name="closed" value="true" />
+      <created>1702227795048</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702227795048</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +453,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DBConnection with singleton design pattern" />
     <MESSAGE value="Implement functionality to populate tables with items and enable the capability to save items to both tables" />
     <MESSAGE value="Implement the model layer to retrieve and return lists of both customers and items" />
     <MESSAGE value="Implemented the save method for both customers and items in their respective model classes.  Additionally, 'clearFields' method was created to reset input fields." />
@@ -470,6 +477,7 @@
     <MESSAGE value="Updated the Business Object (BO)." />
     <MESSAGE value="Implemented the Factory Design Pattern in the Business Object layer(bo)." />
     <MESSAGE value="Implemented the Factory Design Pattern in the Data Access Object (Dao) layer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Factory Design Pattern in the Data Access Object (Dao) layer." />
+    <MESSAGE value="Converted the 'Place Order' section from MVC architecture to layered architecture." />
+    <option name="LAST_COMMIT_MESSAGE" value="Converted the 'Place Order' section from MVC architecture to layered architecture." />
   </component>
 </project>
