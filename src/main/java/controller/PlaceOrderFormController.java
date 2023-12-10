@@ -2,8 +2,10 @@ package controller;
 
 import bo.custom.CustomerBo;
 import bo.custom.ItemBo;
+import bo.custom.OrdersBo;
 import bo.custom.impl.CustomerBoImpl;
 import bo.custom.impl.ItemBoImpl;
+import bo.custom.impl.OrdersBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dao.custom.OrdersDao;
@@ -89,6 +91,7 @@ public class PlaceOrderFormController {
     private List<CustomersDto> customers;
     private List<ItemsDto> items;
     private CustomerBo customerBo = new CustomerBoImpl();
+    private OrdersBo ordersBo = new OrdersBoImpl();
     private ItemBo itemBo = new ItemBoImpl();
     private OrdersDao ordersDao = new OrdersDaoImpl();
     private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
@@ -214,16 +217,10 @@ public class PlaceOrderFormController {
 
     public void generateId(){
         try {
-            OrderDto dto = ordersDao.lastOrder();
-            if (dto != null){
-                String id = dto.getOrderId();
-                int number = Integer.parseInt(id.split("[D]")[1]);
-                number++;
-                lblOrderId.setText(String.format("D%03d",number));
-            }else {
-                lblOrderId.setText("D001");
-            }
-        } catch (SQLException | ClassNotFoundException e) {
+            lblOrderId.setText(ordersBo.generateId());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
@@ -242,7 +239,7 @@ public class PlaceOrderFormController {
         }
         boolean isSaved = false;
         try {
-            isSaved = ordersDao.saveOrder(new OrderDto(
+            isSaved = ordersBo.saveOrder(new OrderDto(
                     lblOrderId.getText(),
                     LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
                     cmbCustomerID.getValue().toString(),
