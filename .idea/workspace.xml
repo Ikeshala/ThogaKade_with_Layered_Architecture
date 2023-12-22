@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="To create a JAR file, include the Maven Shade Plugin.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Create an icon and generate an EXE file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +189,7 @@
       <workItem from="1702558002988" duration="19000" />
       <workItem from="1702558061214" duration="13000" />
       <workItem from="1703221070464" duration="18302000" />
-      <workItem from="1703246376382" duration="320000" />
+      <workItem from="1703246376382" duration="2159000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -491,7 +487,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703245265164</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Generate a JAR file.">
+      <option name="closed" value="true" />
+      <created>1703247393556</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1703247393556</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Create an icon and generate an EXE file">
+      <option name="closed" value="true" />
+      <created>1703248963321</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1703248963321</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,8 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
-    <MESSAGE value="Incorporated a new directory to archive UI images for future reference and utilization." />
     <MESSAGE value="Implemented a case-insensitive search function for both customers and items." />
     <MESSAGE value="Implemented loading of item codes and customer IDs into combo boxes. Automatically fetches customer names corresponding to customer IDs and item descriptions along with unit prices relevant to item codes." />
     <MESSAGE value="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs." />
@@ -534,7 +544,9 @@
     <MESSAGE value="Modified the table view for orders and order details." />
     <MESSAGE value="Fully implemented the 'Orders' (view order) section and finalized the ThogaKade POS System with a layered architecture." />
     <MESSAGE value="To create a JAR file, include the Maven Shade Plugin." />
-    <option name="LAST_COMMIT_MESSAGE" value="To create a JAR file, include the Maven Shade Plugin." />
+    <MESSAGE value="Generate a JAR file." />
+    <MESSAGE value="Create an icon and generate an EXE file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create an icon and generate an EXE file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
