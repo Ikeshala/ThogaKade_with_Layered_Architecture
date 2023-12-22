@@ -40,28 +40,35 @@ FROM customer]]>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="20" splitType="Stretch">
+		<band height="45" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement x="35" y="0" width="100" height="15" uuid="c9178751-c8e9-43b6-b53f-5654b10f17e0">
+				<reportElement x="30" y="25" width="100" height="15" forecolor="#014441" uuid="c9178751-c8e9-43b6-b53f-5654b10f17e0">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="11" isBold="true"/>
+					<font fontName="Showcard Gothic" size="11" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ThogaKade]]></text>
 			</staticText>
+			<image>
+				<reportElement x="75" y="0" width="20" height="20" uuid="27a1e3fb-7275-48c5-a034-d341cbde98b1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images/img_21.png"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
 		<band height="20" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement x="35" y="0" width="100" height="15" uuid="5e8282d4-23d1-45f1-ab83-5a24765832c3">
+				<reportElement x="35" y="0" width="100" height="15" forecolor="#014441" uuid="5e8282d4-23d1-45f1-ab83-5a24765832c3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="9" isUnderline="true"/>
+					<font fontName="Poppins ExtraBold" size="9" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[Customers]]></text>
 			</staticText>
@@ -182,7 +189,7 @@ FROM customer]]>
 		<band height="20" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement x="35" y="3" width="100" height="15" uuid="a5ee3e33-99db-45a5-bb56-2d48a0280de9">
+				<reportElement x="35" y="3" width="100" height="15" forecolor="#014441" uuid="a5ee3e33-99db-45a5-bb56-2d48a0280de9">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
