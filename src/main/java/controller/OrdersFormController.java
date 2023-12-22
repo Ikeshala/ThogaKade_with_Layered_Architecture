@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
@@ -21,22 +22,16 @@ public class OrdersFormController {
     private JFXTreeTableView<?> tblOrders;
 
     @FXML
-    private TreeTableColumn colOrderId;
+    private TreeTableColumn<?, ?> colOrderId;
 
     @FXML
-    private TreeTableColumn colDate;
+    private TreeTableColumn<?, ?> colDate;
 
     @FXML
-    private TreeTableColumn colCustomerId;
+    private TreeTableColumn<?, ?> colCustomerName;
 
     @FXML
-    private TreeTableColumn colCustomerName;
-
-    @FXML
-    private TreeTableColumn colTotal;
-
-    @FXML
-    private TreeTableColumn colOption;
+    private TreeTableColumn<?, ?> colOption;
 
     @FXML
     private JFXTextField txtSearchOrder;
@@ -45,22 +40,16 @@ public class OrdersFormController {
     private JFXTreeTableView<?> tblOrderDetails;
 
     @FXML
-    private TreeTableColumn colOrderIdDetailTable;
+    private TreeTableColumn<?, ?> colItemCode;
 
     @FXML
-    private TreeTableColumn colItemCode;
+    private TreeTableColumn<?, ?> colDescription;
 
     @FXML
-    private TreeTableColumn colDescription;
+    private TreeTableColumn<?, ?> colQuantity;
 
     @FXML
-    private TreeTableColumn colQuantity;
-
-    @FXML
-    private TreeTableColumn colUnitPrice;
-
-    @FXML
-    private TreeTableColumn colAmount;
+    private TreeTableColumn<?, ?> colAmount;
 
     @FXML
     void BackButtonOnAction(ActionEvent event) {

@@ -70,12 +70,10 @@
             </JFXButton>
             <JFXTreeTableView id="#tblItems" fx:id="tblOrders" layoutX="13.0" layoutY="119.0" prefHeight="195.0" prefWidth="805.0" style="-fx-selection-bar: #9abae0; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
                <columns>
-                  <TreeTableColumn fx:id="colOrderId" prefWidth="90.0" text="Order ID" />
-                  <TreeTableColumn fx:id="colDate" prefWidth="130.0" text="Date" />
-                  <TreeTableColumn fx:id="colCustomerId" prefWidth="90.0" text="Customer ID" />
+                  <TreeTableColumn fx:id="colOrderId" prefWidth="181.0" text="Order ID" />
+                  <TreeTableColumn fx:id="colDate" prefWidth="228.0" text="Date" />
                   <TreeTableColumn fx:id="colCustomerName" prefWidth="250.0" text="Customer Name" />
-                  <TreeTableColumn fx:id="colTotal" prefWidth="130.0" text="Total" />
-                  <TreeTableColumn fx:id="colOption" prefWidth="90.0" text="Option" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="117.0" text="Option" />
                </columns>
                <styleClass>
                   <String fx:value="table-row-cell:selected" />
@@ -106,12 +104,10 @@
             </Pane>
             <JFXTreeTableView id="#tblItems" fx:id="tblOrderDetails" layoutX="13.0" layoutY="329.0" prefHeight="202.0" prefWidth="805.0" style="-fx-selection-bar: #9abae0; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
                <columns>
-                  <TreeTableColumn fx:id="colOrderIdDetailTable" prefWidth="90.0" text="Order ID" />
-                  <TreeTableColumn fx:id="colItemCode" prefWidth="90.0" text="Item Code" />
-                  <TreeTableColumn fx:id="colDescription" prefWidth="250.0" text="Description" />
-                  <TreeTableColumn fx:id="colQuantity" prefWidth="90.0" text="Quantity" />
-                  <TreeTableColumn fx:id="colUnitPrice" prefWidth="130.0" text="Unit Price" />
-                  <TreeTableColumn fx:id="colAmount" prefWidth="130.0" text="Amount" />
+                  <TreeTableColumn fx:id="colItemCode" prefWidth="120.0" text="Item Code" />
+                  <TreeTableColumn fx:id="colDescription" prefWidth="390.0" text="Description" />
+                  <TreeTableColumn fx:id="colQuantity" prefWidth="120.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colAmount" prefWidth="150.0" text="Amount" />
                </columns>
                <styleClass>
                   <String fx:value="table-row-cell:selected" />
