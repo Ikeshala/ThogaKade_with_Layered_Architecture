@@ -55,7 +55,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="586.0" layoutY="489.0" onAction="#RefreshButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="535.0" layoutY="489.0" onAction="#RefreshButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -68,7 +68,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnUpdate" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="484.0" layoutY="489.0" onAction="#UpdateButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnUpdate" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="433.0" layoutY="489.0" onAction="#UpdateButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -81,7 +81,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="382.0" layoutY="489.0" onAction="#SaveButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="SAVE" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="331.0" layoutY="489.0" onAction="#SaveButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="SAVE" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -185,6 +185,19 @@
                   </JFXTextField>
                </children>
             </AnchorPane>
+            <JFXButton alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="637.0" layoutY="489.0" onAction="#ReportButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #043800; -fx-border-radius: 5; -fx-background-color: #043800;" text="REPORT" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#685d5d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
          </children>
       </AnchorPane>
    </children>

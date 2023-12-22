@@ -4,71 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Generated all customer reports using Jasper Reports.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/reports/itemReport.jrxml" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Removed unnecessary resource images and icons from the project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/AdobeStock_209351942_Preview.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/AdobeStock_431788540_Video_HD_Preview.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/NicePng_grocery-png_847295.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/abc-transformed (1).jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ezgif.com-gif-maker.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ezgif.com-webp-to-jpg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/icons8-search.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/icons8-users.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/img_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/keels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/vecteezy_autumn-and-coffee-concept_2054792.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/vecteezy_fruit-and-veggie-juice_2037752.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/reports/customerReport.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reports/customerReport.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +186,7 @@
       <workItem from="1702214722655" duration="14520000" />
       <workItem from="1702558002988" duration="19000" />
       <workItem from="1702558061214" duration="13000" />
-      <workItem from="1703221070464" duration="1118000" />
+      <workItem from="1703221070464" duration="2207000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -505,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702235004655</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Removed unnecessary resource images and icons from the project.">
+      <option name="closed" value="true" />
+      <created>1703223072774</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1703223072774</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement the model layer to retrieve and return lists of both customers and items" />
     <MESSAGE value="Implemented the save method for both customers and items in their respective model classes.  Additionally, 'clearFields' method was created to reset input fields." />
     <MESSAGE value="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created." />
     <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
@@ -548,6 +494,7 @@
     <MESSAGE value="Implemented the Factory Design Pattern in the Data Access Object (Dao) layer." />
     <MESSAGE value="Converted the 'Place Order' section from MVC architecture to layered architecture." />
     <MESSAGE value="Generated all customer reports using Jasper Reports." />
-    <option name="LAST_COMMIT_MESSAGE" value="Generated all customer reports using Jasper Reports." />
+    <MESSAGE value="Removed unnecessary resource images and icons from the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary resource images and icons from the project." />
   </component>
 </project>
