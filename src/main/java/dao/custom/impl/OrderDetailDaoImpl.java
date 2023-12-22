@@ -1,12 +1,17 @@
 package dao.custom.impl;
 
+import dao.util.CrudUtil;
 import db.DBConnection;
 import dto.OrderDetailsDto;
 import dao.custom.OrderDetailDao;
+import dto.tm.OrderDetailsTm;
+import entity.Item;
 import entity.OrderDetail;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDetailDaoImpl implements OrderDetailDao {
@@ -46,6 +51,22 @@ public class OrderDetailDaoImpl implements OrderDetailDao {
 
     @Override
     public List<OrderDetail> getAll() throws SQLException, ClassNotFoundException {
-        return null;
+        List<OrderDetail> list = new ArrayList<>();
+        String sql = "SELECT * FROM orderdetail WHERE orderId = ?";
+
+//        PreparedStatement ptsm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+        ResultSet resultSet = CrudUtil.execute(sql);
+
+        while (resultSet.next()) {
+            list.add(new OrderDetail(
+                    resultSet.getString(1),
+                    resultSet.getString(2),
+                    resultSet.getInt(3),
+                    resultSet.getDouble(4)
+
+            ));
+        }
+
+        return list;
     }
 }

@@ -3,7 +3,7 @@ package dao;
 import dao.custom.impl.CustomerDaoImpl;
 import dao.custom.impl.ItemDaoImpl;
 import dao.custom.impl.OrderDetailDaoImpl;
-import dao.custom.impl.OrdersDaoImpl;
+import dao.custom.impl.CartDaoImpl;
 import dao.util.DaoType;
 
 public class DaoFactory {
@@ -17,7 +17,7 @@ public class DaoFactory {
             case CUSTOMER: return(T) new CustomerDaoImpl();
             case ITEM: return(T) new ItemDaoImpl();
             case ORDER_DETAIL: return(T) new OrderDetailDaoImpl();
-            case ORDER: return(T) new OrdersDaoImpl();
+            case ORDER: return(T) new CartDaoImpl();
         }
         return null;
     }

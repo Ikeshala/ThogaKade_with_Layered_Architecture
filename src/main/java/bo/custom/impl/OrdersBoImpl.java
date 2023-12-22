@@ -1,23 +1,23 @@
 package bo.custom.impl;
 
 import bo.custom.OrdersBo;
-import dao.custom.OrdersDao;
-import dao.custom.impl.OrdersDaoImpl;
-import dto.OrderDto;
+import dao.custom.CartDao;
+import dao.custom.impl.CartDaoImpl;
+import dto.CartDto;
 
 import java.sql.SQLException;
 
 public class OrdersBoImpl implements OrdersBo {
-    private OrdersDao ordersDao = new OrdersDaoImpl();
+    private CartDao cartDao = new CartDaoImpl();
     @Override
-    public boolean saveOrder(OrderDto dto) throws SQLException, ClassNotFoundException {
-        return ordersDao.save(dto);
+    public boolean saveOrder(CartDto dto) throws SQLException, ClassNotFoundException {
+        return cartDao.save(dto);
     }
 
     @Override
     public String generateId() throws SQLException, ClassNotFoundException {
         try {
-            String id = ordersDao.getLastOrder().getOrderId();
+            String id = cartDao.getLastOrder().getOrderId();
             if (id!=null){
                 int num = Integer.parseInt(id.split("[D]")[1]);
                 num++;

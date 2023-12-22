@@ -8,13 +8,13 @@ import bo.custom.impl.ItemBoImpl;
 import bo.custom.impl.OrdersBoImpl;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
-import dao.custom.OrdersDao;
-import dao.custom.impl.OrdersDaoImpl;
+import dao.custom.CartDao;
+import dao.custom.impl.CartDaoImpl;
 import dto.CustomersDto;
 import dto.ItemsDto;
 import dto.OrderDetailsDto;
-import dto.OrderDto;
-import dto.tm.OrderTm;
+import dto.CartDto;
+import dto.tm.CartTm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -65,7 +65,7 @@ public class PlaceOrderFormController {
     private JFXTextField txtBuyingQuantity;
 
     @FXML
-    private JFXTreeTableView<OrderTm> tblOrders;
+    private JFXTreeTableView<CartTm> tblOrders;
 
     @FXML
     private TreeTableColumn colItemCode;
@@ -93,8 +93,8 @@ public class PlaceOrderFormController {
     private CustomerBo customerBo = new CustomerBoImpl();
     private OrdersBo ordersBo = new OrdersBoImpl();
     private ItemBo itemBo = new ItemBoImpl();
-    private OrdersDao ordersDao = new OrdersDaoImpl();
-    private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
+    private CartDao cartDao = new CartDaoImpl();
+    private ObservableList<CartTm> tmList = FXCollections.observableArrayList();
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
         colItemDescription.setCellValueFactory(new TreeItemPropertyValueFactory<>("description"));
@@ -166,7 +166,7 @@ public class PlaceOrderFormController {
         button.setTextFill(Color.WHITE);
         button.setStyle("-fx-border-color:   #6B240C; -fx-border-radius: 5; -fx-background-color:  #6B240C;");
 
-        OrderTm orderTm = new OrderTm(
+        CartTm cartTm = new CartTm(
                 cmbItemCode.getValue().toString(),
                 txtItemDescription.getText(),
                 Integer.parseInt(txtBuyingQuantity.getText()),
@@ -175,31 +175,31 @@ public class PlaceOrderFormController {
         );
 
         button.setOnAction(actionEvent -> {
-            tmList.remove(orderTm);
+            tmList.remove(cartTm);
             tblOrders.refresh();
-            total -= orderTm.getAmount();
+            total -= cartTm.getAmount();
             lblTotal.setText(String.format("%.2f",total));
         });
 
         boolean isExist = false;
 
-        for (OrderTm order:tmList) {
-            if (order.getCode().equals(orderTm.getCode())){
-                order.setQuantity(order.getQuantity() + orderTm.getQuantity());
-                order.setAmount(order.getAmount() + orderTm.getAmount());
+        for (CartTm order:tmList) {
+            if (order.getCode().equals(cartTm.getCode())){
+                order.setQuantity(order.getQuantity() + cartTm.getQuantity());
+                order.setAmount(order.getAmount() + cartTm.getAmount());
                 isExist = true;
-                total += orderTm.getAmount();
+                total += cartTm.getAmount();
             }
         }
 
         if (!isExist){
-            tmList.add(orderTm);
-            total += orderTm.getAmount();
+            tmList.add(cartTm);
+            total += cartTm.getAmount();
         }
         lblTotal.setText(String.format("%.2f",total));
 
 
-        TreeItem<OrderTm> treeObject = new RecursiveTreeItem<OrderTm>(tmList, RecursiveTreeObject::getChildren);
+        TreeItem<CartTm> treeObject = new RecursiveTreeItem<CartTm>(tmList, RecursiveTreeObject::getChildren);
         tblOrders.setRoot(treeObject);
         tblOrders.setShowRoot(false);
     }
@@ -228,7 +228,7 @@ public class PlaceOrderFormController {
     @FXML
     void PlaceOrderButtonOnAction(ActionEvent event) {
         List<OrderDetailsDto> list = new ArrayList<>();
-        for (OrderTm tm:tmList) {
+        for (CartTm tm:tmList) {
             list.add(new OrderDetailsDto(
                     lblOrderId.getText(),
                     tm.getCode(),
@@ -239,7 +239,7 @@ public class PlaceOrderFormController {
         }
         boolean isSaved = false;
         try {
-            isSaved = ordersBo.saveOrder(new OrderDto(
+            isSaved = ordersBo.saveOrder(new CartDto(
                     lblOrderId.getText(),
                     LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
                     cmbCustomerID.getValue().toString(),

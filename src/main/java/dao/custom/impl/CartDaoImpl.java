@@ -1,9 +1,9 @@
 package dao.custom.impl;
 
 import dao.custom.OrderDetailDao;
-import dao.custom.OrdersDao;
+import dao.custom.CartDao;
 import db.DBConnection;
-import dto.OrderDto;
+import dto.CartDto;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,10 +11,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class OrdersDaoImpl implements OrdersDao {
+public class CartDaoImpl implements CartDao {
     private OrderDetailDao orderDetailDao = new OrderDetailDaoImpl();
     @Override
-    public boolean save(OrderDto dto) throws SQLException, ClassNotFoundException {
+    public boolean save(CartDto dto) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         try {
             connection = DBConnection.getInstance().getConnection();
@@ -43,7 +43,7 @@ public class OrdersDaoImpl implements OrdersDao {
     }
 
     @Override
-    public boolean update(OrderDto entity) throws SQLException {
+    public boolean update(CartDto entity) throws SQLException {
         return false;
     }
 
@@ -53,17 +53,17 @@ public class OrdersDaoImpl implements OrdersDao {
     }
 
     @Override
-    public List<OrderDto> getAll() throws SQLException, ClassNotFoundException {
+    public List<CartDto> getAll() throws SQLException, ClassNotFoundException {
         return null;
     }
 
     @Override
-    public OrderDto getLastOrder() throws SQLException, ClassNotFoundException {
+    public CartDto getLastOrder() throws SQLException, ClassNotFoundException {
         String sql = "SELECT * FROM orders ORDER BY id DESC LIMIT 1";
         PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
         ResultSet resultSet = pstm.executeQuery();
         if (resultSet.next()){
-            return new OrderDto(
+            return new CartDto(
                     resultSet.getString(1),
                     resultSet.getString(2),
                     resultSet.getString(3),

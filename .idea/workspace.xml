@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Generated all item report using Jasper Reports.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Modified the table view for orders and order details.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/custom/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/CartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CartTm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderDetailsTm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/OrdersBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bo/custom/impl/OrdersBoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/OrdersDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/impl/OrderDetailDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/impl/OrderDetailDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/custom/impl/OrdersDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/custom/impl/CartDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +108,12 @@
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade (with Layered Architecture)\src\main\resources\reports" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao.custom.impl" />
+      <recent name="dao.custom" />
+      <recent name="dto" />
+      <recent name="dto.tm" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -186,7 +204,7 @@
       <workItem from="1702214722655" duration="14520000" />
       <workItem from="1702558002988" duration="19000" />
       <workItem from="1702558061214" duration="13000" />
-      <workItem from="1703221070464" duration="3684000" />
+      <workItem from="1703221070464" duration="10842000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -460,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703224872320</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Modified the table view for orders and order details.">
+      <option name="closed" value="true" />
+      <created>1703226975015</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1703226975015</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created." />
     <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
     <MESSAGE value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
     <MESSAGE value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
@@ -503,6 +528,18 @@
     <MESSAGE value="Generated all customer reports using Jasper Reports." />
     <MESSAGE value="Removed unnecessary resource images and icons from the project." />
     <MESSAGE value="Generated all item report using Jasper Reports." />
-    <option name="LAST_COMMIT_MESSAGE" value="Generated all item report using Jasper Reports." />
+    <MESSAGE value="Modified the table view for orders and order details." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified the table view for orders and order details." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/custom/impl/CartDaoImpl.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
